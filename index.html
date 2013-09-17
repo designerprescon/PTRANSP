@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Portal da Transparência
+  </title>
+  <!--<link href="//fonts.googleapis.com/css?family=Abel|Quicksand|Lato:300" rel="stylesheet" />-->
+  <link href="css/estilo.css" rel="stylesheet" />
+  <script src="js/jquery.js"></script>
+</head>
+
+<body>
+
+<!-- TEMAS DISPONÍVEIS -->
+<!-- tema-[vermelho][amarelo][verde] -->
+<div class="tema-azul"></div>
+
+<div class="header">
+  <div id="nome-portal">
+    <img src="img/brasao-prefeitura.png" height="69" width="65"/>
+    <h1>PORTAL DA TRANSPARÊNCIA</h1>
+    <h2>PREFEITURA MUNICIPAL DE CAMPOS DO JORDÃO</h2>
+  </div>
+</div>
+
+<div class="toolbar">
+  <div class="inicio">
+    <div id="icon">
+      <img src="img/home-icon.png" height="16" width="20" />
+    </div>
+  </div>
+  <div class="breadcumb">
+    <div id="breadcumb">
+      Olá, eu sou o Breadcumb
+    </div>
+  </div>
+</div>
+
+<div class="sidemenu">
+  <div class="itens-menu">
+    <div id="menu">Administrativo</div>
+    <div id="menu">Contas Públicas</div>
+    <div id="menu">Recursos Humanos</div>
+  </div>
+</div>
+
+<div class="textos-home">
+  <div class="texto-portal">
+    <h1>O QUE É O PORTAL DA TRANSPARÊNCIA</h1>
+    <p>O Portal da Transparência tem o objetivo de divulgar dados e informações dos órgãos da Administração Pública
+    Municipal na Internet.
+    <p>As páginas apresentam informaçõs sobre os gastos realizados com a folha de pagamento da Administração Direta
+    (Recursos Humanos), com o Planejamento Orçamentário autorizado pela Câmara Municipal e sobre a execução
+    orçamentária do exercício, atualizada, com dados de gastos com fornecedores em suas diversas modalidades.
+    <p>A prestação de contas públicas é um direito do cidadão e uma importante ferramenta para o exercício da
+    democracia.
+    <p>O Governo Municipal, ao apresentar claramente os seus atos e resultados, demonstra claramente o compromisso
+      com sua cidade.
+    </p>
+  </div>
+
+  <div class="accordion-default">
+    <h1>
+    <img src="img/administrativo-icon.png" height="16" width="13"/>
+      ADMINISTRATIVO</h1>
+    <h1>CONTAS PÚBLICAS</h1>
+    <h1>RECURSOS HUMANOS</h1>
+  </div>
+</div>
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".inicio").click(function () {
+        $(".sidemenu").fadeToggle(
+          "slow",
+          "linear");
+      });
+    });
+  </script>
+</body>
+
+</html>
